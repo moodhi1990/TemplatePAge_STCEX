@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+header {
+    top: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f6f6;
+    box-shadow: 5px 5px 5px #00000012;
+    position: fixed;
+    height: 10%;
+}
+body{
+  height: 90%;
+  background-color: rgba(241, 246, 246, 0.3);
+}
+header .logo {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 0;
+    margin-left: 2%;
+}
+.logo img {
+    width: 70px;
+    height: auto;
+    margin-right: 20px;
+}
+header nav {
+    width: 60%;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-right:  2%;
+   
+}
+header nav ul {
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+     flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+
+header nav ul li {
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+}
+
+header nav ul li a {
+    margin-right: 2%;  
+    color: gray;
+    font-size: 2.2em;
+    text-decoration: none;
+    display: block;
+}
+
+nav img {
+    width: 40px;
+    height: auto;
+}
+#Arabic {
+   color: #95babd;
+   font-weight: bolder;
+}
+/* hyper Link Hover */
+a::after {
+   content: '';
+   display: block;
+   width: 0;
+   height: 4px;
+   background: #E89D01;
+   transition: width .4s;
+}
+a:hover::after {
+   width: 100%;
+   transition: width .4s;
+}
+#without_hover:hover::after{
+ width:0%;
+}
+/*End hyper Link Hover */
+.dropdown {
+   float: left;
+   overflow: hidden;
+   padding: 0;
+
+}
+.dropdown .dropbtn {
+   border: none;
+   outline: none;
+   color: gray;
+   font-size: 2.2em;
+   background-color: inherit;
+   font-family: inherit;
+   margin: 0;
+   padding: 0;
+
+}
+.dropdown-content {
+   display: none;
+   position: absolute;
+   top:70px;
+   background-color: #f1f6f6;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px #00000012;
+z-index: 100;
+}
+
+.dropdown-content a {
+   display: block;
+   color: gray;
+   font-size: 0.7em;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   z-index: -10;
+}
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+   .container {
+ display: none;
+ cursor: pointer;
+margin-right: 10%;
+}
+.bar1, .bar2, .bar3 {
+ width: 35px;
+ height: 5px;
+ background-color: grey;
+ margin: 6px 0;
+ transition: 0.4s;
+}
+.change .bar1 {
+ -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+ transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {opacity: 0;}
+.change .bar3 {
+ -webkit-transform: rotate(45deg) translate(-8px, -8px);
+ transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*smaert PHONE*/
+@media (max-width: 768px) {
+
+header .logo {
+    width: 50%;
+
+
+}
+   .logo img {
+       width: 45px;
+       height: auto;
+       margin: 2px;
+ 
+
+   }
+.container {
+    display: none;
+}
+   header nav {
+      display: none;
+}
+}
+
+/*Taplets*/
+@media (max-width: 900px) {
+
+.logo {
+    width: 60%;
+
+
+      margin-right: 20%;
+
+}
+   .logo img {
+       width: 45px;
+       height: auto;
+       margin: 2px;
+ 
+
+   }
+.container {
+    display: block;
+}
+   header nav {
+      display: none;
+}
+}
+
+/* laptop */
+@media (max-width: 1200px) ){
+
+.logo {
+    width: 60%;
+
+border: 2px solid red; 
+      margin-right: 20%;
+
+}
+   .logo img {
+       width: 45px;
+       height: auto;
+       margin: 2px;
+ 
+
+   }
+
+   header nav {
+       position: absolute;
+       width: 100%;
+       height: calc(100vh-50px);
+       background-color: #f1f6f6;
+       top: 50px;
+       left: -100%;
+       transition: 0.5s;
+       font-size: 1em;
+   }
+   header nav ul {
+       display: block;
+       text-align: center;
+   }
+   header nav ul li a {
+      
+   }
+
+
+}
+
+
+/* Footer  100%*/
+/* responsive 100% */
+.footer {
+   background-color: #95babd;
+   padding: 0.1%;
+   text-align: center;
+}
+#footerRights {
+   font-size: 80%;
+   font-weight: 400;
+   margin-bottom: .5rem/!important/;
+   color: #6c757d/!important/;
+   text-align: center;
+   text-decoration: none;
+   color: white;
+   width: 100%;
+   letter-spacing: 2px;
+}
