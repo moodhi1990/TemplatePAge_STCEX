@@ -264,3 +264,39 @@ border: 2px solid red;
    width: 100%;
    letter-spacing: 2px;
 }
+/*/// about page updated by Moodhi*/
+  .aboutTitle {
+    text-align: center;
+
+  }
+  .aboutTitle h1 {  
+    color:  #04817E;
+     }
+  .aboutContent {
+    margin: 2%;
+    font-family: "Times New Roman", Times, serif;
+    letter-spacing: 1px;
+    color:  #626262;
+  }
+  .aboutContent li {
+    margin: 2%;
+    font-family:"Times New Roman", Times, serif;
+  }
+  .form {
+
+  /* background-color: #f1f6f6; */
+  background: #f1f6f6;
+padding: 5%;
+max-width: 60%;
+margin: 5% auto;
+border-radius: 4px;
+box-shadow: 0 4px 10px 4px #00000012;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #E89D01;
+  border-radius: 20%;
+  display: inline-block;
+}
+hr { border-color: #E89D01; }
