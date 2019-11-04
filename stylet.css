@@ -267,28 +267,35 @@ border: 2px solid red;
 /*/// about page updated by Moodhi*/
   .aboutTitle {
     text-align: center;
+    padding: 2%;
 
   }
   .aboutTitle h1 {  
     color:  #04817E;
      }
+      .aboutTitle h2 {  
+    color:    #4B90AA;
+     }
+      .aboutTitle h3 {  
+    color:  #E89D01;
+     }
   .aboutContent {
     margin: 2%;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Times New Roman", Times, serif important;
     letter-spacing: 1px;
-    color:  #626262;
+    color:  #4B90AA;
   }
   .aboutContent li {
     margin: 2%;
-    font-family:"Times New Roman", Times, serif;
+     color:  #4B90AA;
   }
-  .form {
 
-  /* background-color: #f1f6f6; */
+  .aboutContent h3 {color:  #04817E;}
+  .form {
   background: #f1f6f6;
 padding: 5%;
 max-width: 60%;
-margin: 5% auto;
+margin: 10% auto;
 border-radius: 4px;
 box-shadow: 0 4px 10px 4px #00000012;
 }
@@ -299,4 +306,19 @@ box-shadow: 0 4px 10px 4px #00000012;
   border-radius: 20%;
   display: inline-block;
 }
-hr { border-color: #E89D01; }
+hr { border-color: #D4EAD4; }
+
+/*//responsive about*/
+@media screen and (max-width: 900px)
+{
+    .form {
+  background: #f1f6f6;
+max-width: 100%;
+box-shadow: 0 4px 10px 4px #00000012;
+}
+ .aboutTitle {
+    text-align: center;
+    padding: 10%;
+
+  }
+}
