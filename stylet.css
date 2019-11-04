@@ -12,7 +12,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #f1f6f6;
-    box-shadow: 5px 5px 5px #00000012;
+    box-shadow: 2px 2px 2px  gray /*#00000012*/;
     position: fixed;
     height: 10%;
 
@@ -274,7 +274,7 @@ border: 2px solid red;
     color:  #04817E;
      }
       .aboutTitle h2 {  
-    color:    #4B90AA;
+    color:    #626262;
      }
       .aboutTitle h3 {  
     color:  #E89D01;
@@ -283,18 +283,18 @@ border: 2px solid red;
     margin: 2%;
     font-family: "Times New Roman", Times, serif important;
     letter-spacing: 1px;
-    color:  #4B90AA;
+    color:  #626262;
   }
-  .aboutContent li {
+  .aboutContent li , ol, ul {
     margin: 2%;
-     color:  #4B90AA;
+     color:  black;
   }
 
   .aboutContent h3 {color:  #04817E;}
   .form {
   background: #f1f6f6;
 padding: 5%;
-max-width: 60%;
+max-width: 80%;
 margin: 10% auto;
 border-radius: 4px;
 box-shadow: 0 4px 10px 4px #00000012;
