@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>STCEX Conference</title>
 
     <style type="text/css">
@@ -36,19 +37,53 @@
 .Menu ul ul { display: none; }
 .Menu ul li:hover >ul { display: block;
 color: red; }
-.sponsors{
-   /* height: 40%;*/
-   height: 300px;
-    background-color: red;
-    margin: 0;
-    }
-    .sponsorA {
-     height: 100%;
-    background-color: yellow;
-    width: 300px; }
+
+/*SPONSORS STYLE */
+.Sponcers {
+    height: 10%;
+    width: 100%;
+    background-color: #f1f6f6;
+    padding: 10px;
+}
+.Sponcers img {
+    height: 100%;
+    width: 10%;
+    border: 50px red;
+}
+
+
+.news {
+background-image: url(./img/news1.jpg);
+background-size: cover;
+height: 200px;
+width: 300px;
+background-repeat: no-repeat;
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+
+}
+
+.new_details {
+    display:flex; 
+    flex-direction: column;
+    background: #4B90AA;
+    height: 40%;
+    width: 100%;
+
+}
+.new_details h6 {
+    color: #626262;
+    font-size: 2em;
+
+}
+.new_details button {
+    background-color: #E89D01;
+    color: #626262;
+    text-decoration-style: bold;
+}
 
     </style>
-}
 
 </head>
 
@@ -91,22 +126,6 @@ color: red; }
                 <li><a href="" class="Nav_link">Why STCEX?</a></li>
                 <li><a href="" class="Nav_link">Program</a></li>
                 <li><a href="https://www.tvtc.gov.sa/Arabic/Departments/FacultyCouncils/stcex8/Pages/default.aspx" class="Nav_link">History</a></li>
-               <!--  <li><a href="" class="Nav_link">test</a>
-                    <ul>
-                     
-                         <li>
-                    <a class="Nav" href="https://www.tvtc.gov.sa/Arabic/Departments/FacultyCouncils/stcex8/Pages/default.aspx"> 8 </a>
-                </li>
-                          <li>
-                    <a class="Nav" href="https://www.tvtc.gov.sa/Arabic/Departments/FacultyCouncils/stcex8/Pages/default.aspx"> 7 </a>
-                </li>
-                    </ul>
-                    </li> -->
-
-
-<!--
-                  <a href="https://tvtc.gov.sa/Arabic/Departments/FacultyCouncils/stcex8/Pages/default.aspx">STCEX 2016</a>
-                  <a href="https://tvtc.gov.sa/Arabic/Departments/FacultyCouncils/stcex1/Pages/default.aspx">STCEX 2014</a> -->
 
                   <li><a href="" id="Arabic">العربية</a></li>
                   <li>
@@ -119,8 +138,19 @@ color: red; }
     <!--  Content -->
     <div class="content">
       <!-- <h1>Comming Soon</h1> -->
-      <div class="News blocks">
-        <h1> News  </h1> 
+   
+       <div class="blocks">
+        <marquee behavior="scroll" direction="left" scrolldelay="100" onmouseover= "this.stop();" onmouseout ="this.start();">
+        <div class="news" > 
+            <div class="new_details"> 
+                <h6> news Title </h6> <button>Read more </button>
+            </div>
+        </div>
+      
+        
+
+        </div> 
+    </marquee>
     </div>
     <div class="Speaker blocks">
       <h1> Speaker  </h1> 
@@ -131,18 +161,13 @@ color: red; }
   <div  class="Discussion blocks">
       <h1> Discussion  </h1>
   </div>
-  <div class="Sponcer blocks">
-      <h1> Sponcer  </h1> 
-  </div>
-  <div class="sponsors"> 
-    <div class="sponsorA"> yy </div>
-    <div class="sponsorB"> </div>
-    <div class="sponsorC"> </div>
-    <div class="sponsorD"> </div>
-    <div class="sponsorE"> </div>
-    <div class="sponsorF"> </div>
-    <div class="sponsorG"> </div>
-  </div>
+<!-- SPONSORS  -->
+ <div class="Sponcers blocks">
+       <marquee behavior="scroll" direction="left"  onmouseover= "this.stop();" onmouseout ="this.start();">
+      <img src="./img/sponsor3.png" alt="sponsor3" />
+            <img src="./img/TVTC.png" alt="sponsor6" />
+  </marquee>
+</div>
 </div>
 <!--  Social Media, Contact Us Embeded-->
 <div class="flex-container">

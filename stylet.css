@@ -15,6 +15,7 @@ header {
     box-shadow: 5px 5px 5px #00000012;
     position: fixed;
     height: 10%;
+    z-index: 10000000;
 
 }
 body{
